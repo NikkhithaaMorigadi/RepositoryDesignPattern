@@ -1,0 +1,50 @@
+{
+  "version": "1.0",
+  "defaultProvider": "cdnjs",
+  "libraries": [{
+  "provider": "cdnjs",
+  "library": "datatables@1.10.21",
+  "destination": "wwwroot/lib/jquery/dist/datatables/"
+}
+,
+{
+  "provider": "cdnjs",
+  "library": "datatables@1.10.21",
+  "destination": "wwwroot/lib/datatables/"
+}
+,
+{
+  "provider": "cdnjs",
+  "library": "jquery@3.6.0",
+  "destination": "wwwroot/jquery/",
+  "files": [
+    "jquery.min.js",
+    "jquery.js"
+  ]
+}
+,
+{
+  "provider": "cdnjs",
+  "library": "datatables@1.10.21",
+  "destination": "wwwroot/lib/datatables/"
+}
+,
+{
+  "provider": "cdnjs",
+  "library": "bootstrap@5.2.0",
+  "destination": "wwwroot/lib/bootstrap/bootstrap/"
+}
+,
+{
+  "provider": "cdnjs",
+  "library": "bootstrap-sweetalert@1.0.1",
+  "destination": "wwwroot/bootstrap-sweetalert/"
+}
+,
+{
+  "provider": "cdnjs",
+  "library": "sweetalert@2.1.2",
+  "destination": "wwwroot/lib/sweetalert/"
+}
+]
+}

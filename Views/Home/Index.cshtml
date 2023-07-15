@@ -1,0 +1,50 @@
+﻿@model IEnumerable<RepositoryDesignPattern.Models.EmployeeViewModel>
+@{
+    ViewBag.Title = "Index";
+}
+
+<div align="center">
+    <h2> Emplloyes Management </h2>
+    <h3> Employee </h3>
+    <table id="emp" cellpadding="5" border="1">
+        <thead>
+            <tr style="background-color:#808080; color:white;">
+                <td>EmployeeId</td>
+                <td>Name</td>
+                <td>Gender</td>
+                <td>Salary</td>
+                <td>Dept</td>
+                <td>Actions</td>
+
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var emp in Model)
+            {
+                <tr>
+                    <td>@emp.EmployeeID </td>
+                    <td>@emp.Name</td>
+                    <td>@emp.Gender </td>
+                    <td>@emp.Salary </td>
+                    <td>@emp.Dept</td>
+                    <td data-id=@emp.EmployeeID>
+                        @Html.ActionLink("Edit","Edit", new {id =emp.EmployeeID})
+                     @* <a href="",class="deletebutton" >
+                      <i style='font-size:24px' class='far'>&#xf2ed;</i></a> 
+                      <a href="",class="updatebutton">
+                      <i style='font-size:24px' class='fas'>&#xf044;</i> </a>*@
+                     
+                      
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+
+<script>
+    $(document).ready(function() {
+        $("#emp").DataTable();
+    });
+</script>

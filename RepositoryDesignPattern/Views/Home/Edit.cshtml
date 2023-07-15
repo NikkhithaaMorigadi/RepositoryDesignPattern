@@ -1,0 +1,55 @@
+﻿@model IEnumerable<RepositoryDesignPattern.Models.EmployeeViewModel>
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h2>Edit</h2>
+
+
+    @foreach (var item in Model)
+    {
+        <div class="form-horizontal">
+            <h4>Student</h4>
+            <hr/>
+            <div class="EmployeeID" id="EmployeeID">
+                @Html.LabelFor(model => item.EmployeeID, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="EmployeeID" id="EmployeeID">
+                    @Html.EditorFor(model => item.EmployeeID, new { htmlAttributes = new { @class = "form-control",@id="eid" } })
+                </div>
+            </div>
+            <div class="Name" id="Name">
+                @Html.LabelFor(model => item.Name, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="Name" id="Name">
+                    @Html.EditorFor(model => item.Name, new { htmlAttributes = new { @class = "form-control" ,@id= "name"} })
+                </div>
+            </div>
+
+            <div class="Gender" id="Gender">
+                @Html.LabelFor(model => item.Gender, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="Gender" id="Gender">
+                    @Html.EditorFor(model => item.Gender, new { htmlAttributes = new { @class = "form-control",@id="gender" } })
+                </div>
+            </div>
+            <div class="Salary" id="Salary">
+                @Html.LabelFor(model => item.Salary, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="Salary" id="Salary">
+                    @Html.EditorFor(model => item.Salary, new { htmlAttributes = new { @class = "form-control" ,@id="salary"} })
+                </div>
+            </div>
+            <div class="Dept" id="Dept">
+                @Html.LabelFor(model => item.Dept, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="Dept" id="Dept">
+                    @Html.EditorFor(model => item.Dept, new { htmlAttributes = new { @class = "form-control" ,@id="dept"} })
+
+                </div>
+            </div>
+            <div>
+                <input id1=emp.EmployeeID, class="button" id="btnSubmit" type="button" value="Save" />
+            </div>
+        </div>
+    }
+    <div>
+        @Html.ActionLink("Back to List", "Index")
+    </div>
+
+<script src="~/js/Employee.js"></script>

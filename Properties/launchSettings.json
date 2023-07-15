@@ -1,0 +1,29 @@
+﻿{
+  "iisSettings": {
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
+    "iisExpress": {
+      "applicationUrl": "http://localhost:36095",
+      "sslPort": 44353
+    }
+  },
+  "profiles": {
+    "RepositoryDesignPattern": {
+      "commandName": "Project",
+      "dotnetRunMessages": true,
+      "launchBrowser": true,
+      "applicationUrl": "https://localhost:7163;http://localhost:5163",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    },
+    "IIS Express": {
+      "commandName": "IISExpress",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "DefaultConnection": "Server=192.168.0.30,1433;Initial Catalog=NikhithaEmp;Persist Security Info=False;User ID=User5;Password=CDev005#8;MultipleActiveResultSets=False;Encrypt=False;TrustServerCertificate=False;"
+      }
+    }
+  }
+}
